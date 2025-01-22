@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --base-color: white;
+    --text-color: #111528;
+    --secondary-text: grey;
+    --accent-color: #0071ff;
+  }
+  .darkmode{
+    --base-color: #070b1d;
+    --text-color: #ffffff;
+    --secondary-text: #a4a5b8;
+    --accent-color: #0071ff;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--base-color);
+    color: var(--text-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px 0 30px;
+}
+
+.left-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0 10px 0 10px;
+}
+
+a:hover {
+    color: blue;
+}
+
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--base-variant);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  #theme-switch svg{
+    fill: var(--primary-color);
+  }
+  #theme-switch svg:last-child{
+    display: none;
+  }
+  .darkmode #theme-switch svg:first-child{
+    display: none;
+  }
+  .darkmode #theme-switch svg:last-child{
+    display: block;
+  }
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 70px 0 50px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+fieldset {
+    padding: 30px;
+}
+
+input {
+    width: 235px;
+}
+
+textarea {
+    resize: none;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-nav {
+        align-items: center;
+    }
+
+    .right-nav li {
+        margin: 10px 0;
+    }
+}

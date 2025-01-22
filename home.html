@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Bens Aguirre">
+    <meta name="description" content="This page is all about Basic HTML Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="icon" href="images/house.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <script type="text/javascript" src="js/darkmode.js" defer></script>
+</head>
+<body>
+    <main>
+        <nav>
+            <div class="left-nav">
+            <img src="images/user.png" alt="user image" width="30" class="logo">
+            <a href="#">Bens Aguirre</a>
+            </div>
+            <ul class="right-nav">
+                <li><a href="home.html">Home </a>&sol;</li>
+                <li><a href="project.html">Projects </a>&sol;</li>
+                <li><a href="article.html">Articles </a>&sol;</li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><button id="theme-switch">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                  </button></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Frontend Developer</h1>
+            <p class="hero-p">html only with proper layout, no styling</p>
+        </header>
+        <section class="first-section">
+            <div class="container">
+                <div class="projects">
+                    <h3 style="padding: 20px 0 20px 20px;">Projects</h3>
+                    <ul class="pr-ul">
+                        <li>HTML Only Portfolio</li>
+                        <li>Calculator</li>
+                        <li>Quiz App</li>
+                        <li>Countdown Timer</li>
+                        <li>Product Upcoming Page</li>
+                    </ul>
+                </div>
+
+                <div class="work">
+                    <div class="work-fdiv">
+                        <h3 style="padding: 20px 0 20px 20px;">Work Experience</h3>
+                        <p style="padding: 0 0 10px 20px;">roadmap.sh</p>
+                        <p style="padding: 0 0 10px 20px;">Solved all the frontend projects</p>
+                        <a href="https://roadmap.sh/account" class="work-a">Visit my Profile</a>
+                    </div>
+                    <div>
+                        <h4 style="padding: 20px 0 20px 20px;">OpenSource Work</h4>
+                        <p style="padding: 0 20px 10px 20px;">Contributed to 50 opensource projects. Made my own projects with 200 Github Stars.</p>
+                        <a href="https://github.com/Bens-Aguirre" class="work-a">Visit my Github Profile</a>
+                    </div>
+                </div>
+
+                <div class="education">
+                    <h3 style="padding: 20px 0 20px 20px;">Education</h3>
+                    <p style="padding: 0 20px 10px 20px;">Graduated with 3.76 out of 4 CGPA. Won Acme Hackaton. Organize 30 sessions.</p>
+
+                    <p style="padding: 0 20px 10px 20px;">Courses I took:</p>
+                    <ul class="educ-ul">
+                        <li>Object Oriented Programming</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Web Engineering</li>
+                        <li>Artificial Intelligence</li>
+                        <li>Human Computer Interaction</li>
+                        <li>Computer Graphics</li>
+                        <li>Database Management Systems</li>
+                        <li>Distributed Database Systems</li>
+                        <li>Discreet Mathematics</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="reviews-section">
+            <h2 style="padding: 20px 0 20px 20px;">Reviews from my Teachers</h2>
+            <div class="card-container">
+            <div class="card" data-aos="fade-right">
+                <p>John doe was a brilliant student; always stood out with his assignments.</p>
+                <div class="name-pos">
+                    <p>Jane Doe</p>
+                    <p>Assistant Professor</p>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up">
+                <p>John doe was a brilliant student; always stood out with his assignments.</p>
+                <div class="name-pos">
+                    <p>Jane Doe</p>
+                    <p>Assistant Professor</p>
+                </div>
+            </div>
+            <div class="card" data-aos="fade-left">
+                <p>John doe was a brilliant student; always stood out with his assignments.</p>
+                <div class="name-pos">
+                    <p>Jane Doe</p>
+                    <p>Assistant Professor</p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <footer>
+            <p>
+                &copy; all rights reserved 2025
+            </p>
+        </footer>
+    </main>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+        duration: 1000,
+      })
+    </script>
+</body>
+</html>
